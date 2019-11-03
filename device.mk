@@ -152,7 +152,7 @@ AB_OTA_PARTITIONS += \
     dtbo \
     vendor
 
-BUILD_WITHOUT_VENDOR := true
+# BUILD_WITHOUT_VENDOR := true
 
 # Skip product partition for nodap build
 ifeq ($(filter %_nodap,$(TARGET_PRODUCT)),)
