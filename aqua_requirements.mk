@@ -23,8 +23,3 @@
 ifeq ($(shell test -d vendor/pixelgapps/; echo $$?),1)
 $(error vendor/pixelgapps is missing from local source)
 endif
-
-# Confirm that prebuilt vendor image is present
-ifeq ($(shell test -d vendor/images/crosshatch/; echo $$?),1)
-$(error Prebuilt crosshatch vendor image is missing from local source)
-endif
